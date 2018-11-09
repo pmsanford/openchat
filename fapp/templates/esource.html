@@ -1,0 +1,24 @@
+<!doctype <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+</head>
+
+<body>
+    <div id="esdata">
+
+    </div>
+
+    <script type="text/javascript">
+        var targetctr = document.getElementById('esdata');
+        var es = new EventSource('/stream');
+
+        es.onmessage = function (e) {
+            targetctr.innerHTML = e.data;
+        }
+    </script>
+</body>
+
+</html>

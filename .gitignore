@@ -1,0 +1,8 @@
+node_modules/
+*venv/
+.vscode/
+__pycache__
+dist/
+*.db
+fapp/static/main.*
+fapp/static/index.html
